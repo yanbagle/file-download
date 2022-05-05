@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import {useState, useEffect} from 'react';
 import './App.css';
+import Files from './components/Files';
+import filesData from "./files.json";
 
-function App() {
+function App() {  
+  
+  useEffect(() => { 
+    if (filesData.length) {
+      filesData.forEach((file) => {
+        file['selected'] = false;
+      });
+    }      
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Files filesData={filesData}></Files>
     </div>
   );
 }
