@@ -6,11 +6,9 @@ import filesData from "./files.json";
 function App() {  
   
   useEffect(() => { 
-    if (filesData.length) {
-      filesData.forEach((file) => {
-        file['selected'] = false;
-      });
-    }      
+    filesData.map(file => {
+      return file['selected'] = false;
+    });        
   });
 
   return (
