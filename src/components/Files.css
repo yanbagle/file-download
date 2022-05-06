@@ -1,4 +1,23 @@
 th {
   font-weight: normal;
   text-align: left;
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: whitesmoke;
+}
+
+.row-header {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.file-header {
+  display: flex;
+  align-items: center;
+}
+
+.file-header * {
+  margin-right: 30px;
 }

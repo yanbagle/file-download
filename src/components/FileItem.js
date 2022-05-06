@@ -1,12 +1,12 @@
 import './Files.css';
 
-function FileItem ({file}) {
+function FileItem ({file, onClick}) {
   
-  console.log(file);
+
   return (
-    <tr className="file-item-row">
+    <tr onClick={onClick} className="file-item-row">
       <th>
-        <input type="checkbox"></input>
+        <input type="checkbox" checked={file.selected} readOnly ></input>
       </th>   
       <th className="file-item-col">{file.name}</th> 
       <th className="file-item-col">{file.device}</th> 

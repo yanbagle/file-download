@@ -10,7 +10,7 @@ function App() {
       return file['selected'] = false;
     });        
   });
-
+  
   return (
     <div className="App">
       <Files filesData={filesData}></Files>
