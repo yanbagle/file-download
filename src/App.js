@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react';
 import './App.css';
-import Files from './components/Files';
+import Files from './components/Files/Files';
 import filesData from "./files.json";
 
 function App() {  
