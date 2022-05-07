@@ -5,7 +5,7 @@ th {
 }
 
 tr:hover {
-  background-color: whitesmoke;
+  background-color: whitesmoke !important;
 }
 
 .row-header {
@@ -20,4 +20,8 @@ tr:hover {
 
 .file-header * {
   margin-right: 30px;
+}
+
+.error {
+  color: red;
 }
