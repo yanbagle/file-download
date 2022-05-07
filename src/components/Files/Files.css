@@ -1,0 +1,46 @@
+th {
+  font-weight: normal;
+  text-align: left;
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: whitesmoke !important;
+}
+
+input {
+  margin: 30px;
+}
+  
+h3 {
+  width: 250px;
+  max-width: 250px; 
+}
+
+.row-header {
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.file-header {
+  display: flex;
+  align-items: center;
+}
+
+.file-header * {
+}
+
+.download:hover {
+  cursor: pointer;
+}
+
+.download-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.error {
+  color: red;
+}
+
